@@ -1,55 +1,42 @@
-# Project Name
+## Development Strategy – Country-Info
 
-<!-- describe your project -->
+1. **Project Setup**
+   - Initialize the project folder with a clear structure (`api-calls/`, `components/`, `handlers/`, `listeners/`)
+   - Create boilerplate files: `index.html`, `index.css`, `init.js`, and config files
 
----
+2. **API Integration**
+   - Connect to the REST Countries API using `fetch()` and async/await
+   - Handle valid responses and transform data as needed for display
 
-## Setup
+3. **UI Rendering**
+   - Create modular components to display country info: flag, name, capital, region, population, languages, and currencies
+   - Build dynamic rendering logic in `renderInformation.js`
 
-<!-- what code do you need just to open the project? this might include:
-  - boilerplate code (https://brandlitic.com/what-is-boilerplate-code/)
-  - loading program data
-  - rendering the initial user interface
--->
+4. **Event Handling**
+   - Capture user input via search bar
+   - Set up listeners for both button click and "Enter" key events
+   - Use a centralized handler to process user actions and update the UI
 
----
+5. **Styling**
+   - Use `index.css` to design a responsive and accessible layout
+   - Style content with modern layout techniques like Flexbox or Grid
 
-<!-- copy this section once for each must-have user story -->
+6. **Error Handling**
+   - Show meaningful messages when a country is not found or the API call fails
+   - Validate empty or malformed user input
 
-## user story
+7. **Modularization**
+   - Keep code organized and maintainable by separating logic:
+     - `api-calls/` for data fetching
+     - `components/` for UI rendering
+     - `handlers/` for processing logic
+     - `listeners/` for DOM event setup
 
-<!-- each issue created from this section will have the `for: user story` label -->
+8. **Testing & Validation**
+   - Perform manual testing on multiple screen sizes and browsers
+   - Test edge cases like typos, no input, or unknown country names
 
-> "as a ... i can ... so that ..."
-
-<!-- write any extra notes or description -->
-
-<!-- describe the tasks to build this user story
-  these will have the `type: logic` label, for example
-  not all projects will have all types of tasks
-  and these are not the only possible types, just some suggestions
--->
-
-### Logic: user story
-
-- a _logic_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
-
-### Interface: user story
-
-- an _interface_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
-
-### Interaction: user story
-
-- an _interaction_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
-
-### Documentation: user story
-
-- a _documentation_ task -> this will become one issue
-  - [ ] some checkboxes for this task
-  - [ ] these will be copy-pasted into the issue
+9. **Final Touches**
+   - Polish UI/UX (spacing, alignment, readability)
+   - Optimize for performance and clean up unused code
+   - Write documentation and backlog

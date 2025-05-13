@@ -1,1 +1,5 @@
-import data from './data.js';
+import { addListeners } from './listeners/listener.js';
+
+window.addEventListener('DOMContentLoaded', () => {
+  addListeners();
+});
